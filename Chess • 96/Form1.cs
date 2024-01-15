@@ -31,9 +31,7 @@ namespace Chess___96
             timerBeyaz.Stop();
 
             timerSiyah.Start();
-            this.BackColor = Color.Black;
-            this.lblBeyaz.ForeColor = Color.White;
-            this.lblSiyah.ForeColor = Color.White;
+         
         }
 
 
@@ -45,7 +43,7 @@ namespace Chess___96
             if (sayacBeyaz <= 0)
             {
                 timerBeyaz.Stop();
-                this.BackColor = Color.White;
+            
                 lblMesaj.Text = "SİYAH KAZANDI";
             }
 
@@ -59,7 +57,7 @@ namespace Chess___96
             if (sayacSiyah <= 0)
             {
                 timerSiyah.Stop();
-                this.BackColor = Color.Black;
+                
                 lblMesaj.Text = "BEYAZ KAZANDI";
             }
         }
@@ -69,9 +67,7 @@ namespace Chess___96
             timerSiyah.Stop();
 
             timerBeyaz.Start();
-            this.BackColor = Color.White;
-            this.lblBeyaz.ForeColor = Color.Black;
-            this.lblSiyah.ForeColor = Color.Black;
+           
 
         }
     }
